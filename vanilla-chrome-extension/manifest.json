@@ -5,7 +5,13 @@
     "version": "0.1",
     "action": {
       "default_popup": "pages/popup.html",
-      "default_icon": "assets/bias_identification_service_logo.jpg"
+      "default_icon": "assets/16_Logo.png"
+    },
+
+    "icons": {
+      "16": "assets/16_Logo.png",
+      "48": "assets/48_Logo.png",  
+      "128": "assets/128_Logo.png"
     },
 
     "content_scripts": [
