@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Click to run",
+    "description": "Runs a bias detector script when the user clicks the action toolbar icon while on a social media(Twitter).",
+    "version": "1.0",
+
+    "icons": {
+      "logo": "assets/bias_identification_service logo.jpg.png"
+    },
+
+    "action": {
+      "default_icon": "index.html"  
+    },
+    "permissions": ["scripting", "activeTab"]
+  }
