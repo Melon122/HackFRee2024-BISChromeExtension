@@ -5,7 +5,7 @@
     "version": "1.0",
 
     "icons": {
-      "logo": "assets/bias_identification_service logo.jpg.png"
+      "src": "assets/bias_identification_service logo.jpg.png"
     },
 
     "action": {

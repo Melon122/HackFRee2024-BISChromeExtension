@@ -1,25 +1,28 @@
 {
     "manifest_version": 3,
-    "name": "Chrome Extension with React & Webpack Template: Bias Identification Service",
+    "name": "Bias Identification Service",
     "description": "Runs a bias detector script when the user clicks the action toolbar icon while on a social media(Twitter).",
-    "background": { "service_worker": "service_worker.js" },
+    "version": "0.1",
     "action": {
-      "default_popup": "popup.html",
-      "default_icon": "assets/bias_identification_service logo.jpg.png"
+      "default_popup": "pages/popup.html",
+      "default_icon": "assets/bias_identification_service_logo.jpg"
     },
-    "icons": {
-      "icon": "assets/bias_identification_service logo.jpg.png"
-    },
+
     "content_scripts": [
       {
         "matches": ["http://*/*", "https://*/*", "<all_urls>"],
-        "js": ["content.js"]
+        "js": ["./content/content.js"]
       },
       
-      {
-        "matches": ["https://twitter.com/*/status/*"],
-        "js": ["./scripts/tweet.js"],
-        "css": ["./scrips/tweet.css"]
+      { 
+        "run_at": "document_end",
+        "matches": [
+          "https://twitter.com/*/status/*",
+          "http://twitter.com/*/status/*"
+          
+        ],
+        "js": ["./content/tweet.js"],
+        "css": ["./content/tweet.css"]
       }
     ]
   }
