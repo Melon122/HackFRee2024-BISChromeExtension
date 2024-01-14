@@ -77,7 +77,7 @@ async function main() {
         contentDiv.style.borderRadius = "16px";
         
         const h1 = document.createElement("h1");
-        h1.textContent = "Through a different lens..."
+        h1.textContent = "Through different lens..."
         contentDiv.appendChild(h1)
 
         const body = document.createElement("p");
